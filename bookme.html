@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -51,37 +51,67 @@
 
   <body class="antialiased">
     <header class="border-b-2">
-      <div
-        class="mx-auto max-w-5xl px-6 py-4 flex flex-col md:flex-row gap-2 md:gap-8 items-center"
-      >
-        <a href="/" class="font-bold text-xl">
-          <span class="text-blue-500"
-            ><i class="bi bi-bookmark-fill"></i> Van</span
-          >Pooler
-        </a>
-        <nav>
-          <ul class="flex gap-4 text-sm md:text-base">
-            <li>
-              <a href="" class="hover:text-blue-500">Solution</a>
-            </li>
-            <li>
-              <a href="" class="hover:text-blue-500">Pricing</a>
-            </li>
-            <li>
-              <a href="" class="hover:text-blue-500">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="flex ml-0 md:ml-auto gap-2 md:gap-8 items-center">
-          <a href="/" class="text-sm md:text-base hover:text-blue-500">Demo</a>
-          <a
-            href="/"
-            class="text-sm md:text-base bg-blue-500 rounded text-white font-bold py-2 px-6 hover:bg-orange-600"
-            >Login / Sign up</a
+      <div class="mx-auto max-w-5xl px-6 py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <a href="/" class="font-bold text-xl">
+            <span class="text-blue-500">Van</span>Pooler
+          </a>
+
+          <!-- Hamburger Menu Button - Visible only on mobile -->
+          <button
+            class="md:hidden"
+            onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
           >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+
+          <!-- Desktop Navigation - Hidden on mobile -->
+          <div class="hidden md:flex md:items-center md:gap-8">
+            <nav>
+              <ul class="flex gap-4 text-sm md:text-base">
+                <li>
+                  <a href="" class="hover:text-blue-500">Solution</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue-500">Pricing</a>
+                </li>
+                <li>
+                  <a href="" class="hover:text-blue-500">Contact</a>
+                </li>
+                <li>
+                  <a href="/" class="hover:text-blue-500">Demo</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Mobile Menu - Hidden by default -->
+        <div id="mobile-menu" class="hidden md:hidden pt-4">
+          <nav class="flex flex-col gap-4">
+            <a href="" class="hover:text-blue-500">Solution</a>
+            <a href="" class="hover:text-blue-500">Pricing</a>
+            <a href="" class="hover:text-blue-500">Contact</a>
+            <a href="/" class="hover:text-blue-500">Demo</a>
+          </nav>
         </div>
       </div>
     </header>
+
     <section class="relative">
       <div class="z-10">
         <div
@@ -99,32 +129,32 @@
           </p>
           <div class="flex gap-4 items-center text-center">
             <a
-              href=""
+              href="https://calendly.com/noahkimcs/30min"
               class="text-sm md:text-base bg-white border rounded font-bold py-2 px-6 hover:bg-gray-50"
-              >Book a demo</a
+              >Book a ride</a
             >
             <a
               href=""
-              class="text-sm md:text-base bg-blue-500 border border-orange-500 rounded text-white font-bold py-2 px-6 hover:bg-orange-600"
+              class="text-sm md:text-base bg-blue-500 border border-blue-500 rounded text-white font-bold py-2 px-6 hover:bg-blue-600"
               >Get started - it's free</a
             >
           </div>
           <div class="flex flex-wrap flex-row justify-center gap-4">
             <small>
               <i
-                class="mr-1 bi bi-check bg-blue-100 border border-orange-200 rounded-full w-[21px] h-[21px] inline-block text-center text-orange-600"
+                class="mr-1 bi bi-check bg-blue-100 border border-blue-200 rounded-full w-[21px] h-[21px] inline-block text-center text-blue-600"
               ></i>
               <span>Lifetime free plan</span>
             </small>
             <small>
               <i
-                class="mr-1 bi bi-check bg-blue-100 border border-orange-200 rounded-full w-[21px] h-[21px] inline-block text-center text-orange-600"
+                class="mr-1 bi bi-check bg-blue-100 border border-blue-200 rounded-full w-[21px] h-[21px] inline-block text-center text-blue-600"
               ></i>
               <span>No credit card needed</span>
             </small>
             <small>
               <i
-                class="mr-1 bi bi-check bg-blue-100 border border-orange-200 rounded-full w-[21px] h-[21px] inline-block text-center text-orange-600"
+                class="mr-1 bi bi-check bg-blue-100 border border-blue-200 rounded-full w-[21px] h-[21px] inline-block text-center text-blue-600"
               ></i>
               <span>Support 24/24 - 7/7</span>
             </small>
@@ -256,7 +286,7 @@
         >
           <div class="flex flex-col text-center max-w-[340px]">
             <div
-              class="border-2 border-blue-50 bg-orange-100 mx-auto rounded-full text-orange-600 w-12 h-12 flex"
+              class="border-2 border-blue-50 bg-blue-100 mx-auto rounded-full text-blue-600 w-12 h-12 flex"
             >
               <i class="bi bi-badge-8k-fill text-2xl my-auto mx-auto"></i>
             </div>
@@ -270,7 +300,7 @@
           </div>
           <div class="flex flex-col text-center max-w-[340px]">
             <div
-              class="border-2 border-blue-50 bg-orange-100 mx-auto rounded-full text-orange-600 w-12 h-12 flex"
+              class="border-2 border-blue-50 bg-blue-100 mx-auto rounded-full text-blue-600 w-12 h-12 flex"
             >
               <i class="bi bi-badge-8k-fill text-2xl my-auto mx-auto"></i>
             </div>
@@ -284,7 +314,7 @@
           </div>
           <div class="flex flex-col text-center max-w-[340px]">
             <div
-              class="border-2 border-blue-50 bg-orange-100 mx-auto rounded-full text-orange-600 w-12 h-12 flex"
+              class="border-2 border-blue-50 bg-blue-100 mx-auto rounded-full text-blue-600 w-12 h-12 flex"
             >
               <i class="bi bi-badge-8k-fill text-2xl my-auto mx-auto"></i>
             </div>
@@ -296,7 +326,7 @@
           </div>
           <div class="flex flex-col text-center max-w-[340px]">
             <div
-              class="border-2 border-blue-50 bg-orange-100 mx-auto rounded-full text-orange-600 w-12 h-12 flex"
+              class="border-2 border-blue-50 bg-blue-100 mx-auto rounded-full text-blue-600 w-12 h-12 flex"
             >
               <i class="bi bi-badge-8k-fill text-2xl my-auto mx-auto"></i>
             </div>
@@ -310,7 +340,7 @@
           </div>
           <div class="flex flex-col text-center max-w-[340px]">
             <div
-              class="border-2 border-blue-50 bg-orange-100 mx-auto rounded-full text-orange-600 w-12 h-12 flex"
+              class="border-2 border-blue-50 bg-blue-100 mx-auto rounded-full text-blue-600 w-12 h-12 flex"
             >
               <i class="bi bi-badge-8k-fill text-2xl my-auto mx-auto"></i>
             </div>
@@ -324,7 +354,7 @@
           </div>
           <div class="flex flex-col text-center max-w-[340px]">
             <div
-              class="border-2 border-blue-50 bg-orange-100 mx-auto rounded-full text-orange-600 w-12 h-12 flex"
+              class="border-2 border-blue-50 bg-blue-100 mx-auto rounded-full text-blue-600 w-12 h-12 flex"
             >
               <i class="bi bi-badge-8k-fill text-2xl my-auto mx-auto"></i>
             </div>
@@ -364,7 +394,7 @@
             >
             <a
               href=""
-              class="text-xs md:text-base bg-blue-500 border border-orange-500 rounded text-white font-bold py-2 px-6 hover:bg-orange-600"
+              class="text-xs md:text-base bg-blue-500 border border-blue-500 rounded text-white font-bold py-2 px-6 hover:bg-blue-600"
               >Get started - it's free</a
             >
           </div>
@@ -742,7 +772,7 @@
             <a href="/" class="font-bold text-xl mx-auto md:mx-0">
               <span class="text-blue-500"
                 ><i class="bi bi-bookmark-fill"></i> </span
-              >me
+              >VanPooler
             </a>
             <p class="mt-2 text-sm text-gray-500 lg:w-4/5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
