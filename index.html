@@ -50,744 +50,207 @@
   </head>
 
   <body class="antialiased">
-    <header class="border-b-2">
-      <div class="mx-auto max-w-5xl px-6 py-4">
-        <div class="flex items-center justify-between">
-          <!-- Logo -->
-          <a href="/" class="font-bold text-xl">
-            <span class="text-blue-500">Van</span>Pooler
-          </a>
-
-          <!-- Hamburger Menu Button - Visible only on mobile -->
-          <button
-            class="md:hidden"
-            onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-
-          <!-- Desktop Navigation - Hidden on mobile -->
-          <div class="hidden md:flex md:items-center md:gap-8">
-            <nav>
-              <ul class="flex gap-4 text-sm md:text-base">
-                <li>
-                  <a href="" class="hover:text-blue-500">Pricing</a>
-                </li>
-                <li>
-                  <a href="" class="hover:text-blue-500">Contact</a>
-                </li>
-                <li>
-                  <a href="/" class="hover:text-blue-500">Demo</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+    <header class="border-b-2 bg-gray-50">
+      <div
+        class="mx-auto max-w-screen-xl px-6 py-4 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <img
+            src="imgs/logo.jpg"
+            class="h-[50px] w-[50px] rounded-full object-cover"
+          />
+          <h1 class="text-xl font-bold">VanPooler 밴불러</h1>
         </div>
 
-        <!-- Mobile Menu - Hidden by default -->
-        <div id="mobile-menu" class="hidden md:hidden pt-4">
-          <nav class="flex flex-col gap-4">
-            <a href="" class="hover:text-blue-500">Solution</a>
-            <a href="" class="hover:text-blue-500">Pricing</a>
-            <a href="" class="hover:text-blue-500">Contact</a>
-            <a href="/" class="hover:text-blue-500">Demo</a>
-          </nav>
-        </div>
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex md:items-center md:gap-8">
+          <ul class="flex gap-4 text-sm md:text-base">
+            <li><a href="mailto:" class="hover:text-blue-500">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-
-    <section class="relative">
-      <div class="z-10">
-        <div
-          class="mx-auto max-w-5xl px-6 md:px-2 py-10 md:py-24 flex flex-col gap-6 items-center"
-        >
-          <h1 class="text-4xl font-bold text-center max-w-[600px]">
-            서비스 준비중입니다
-
-            <br />
-          </h1>
-          <p
-            class="text-gray-600 text-base md:text-lg text-center max-w-[600px]"
-          >
-            안녕하세요, 반풀러를 방문해 주셔서 감사합니다. 현재 더 나은 서비스
-            제공을 위해 준비중에 있습니다. 고객님들께 최상의 서비스를 제공하기
-            위해 열심히 개발하고 있으니 조금만 기다려주세요. 곧 새로운 모습으로
-            찾아뵙도록 하겠습니다.
-          </p>
-          <div class="flex gap-4 items-center text-center">
-            <a
-              href="https://calendly.com/noahkimcs/30min"
-              class="text-sm md:text-base bg-blue-500 border border-blue-500 rounded text-white font-bold py-2 px-6 hover:bg-blue-600"
-              >밴 부르</a
-            >
+    <section>
+      <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
+        <div class="flex flex-col gap-10">
+          <div class="text-center">
+            <h2 class="text-4xl font-bold mb-4">
+              맞춤투어관광, 픽업라이드 서비스
+            </h2>
+            <p class="text-base md:text-lg max-w-[800px] mx-auto text-gray-600">
+              바쁜 현대인들에게는 삶에 지친 자신을 위로하고 스스로 되돌아보기
+              위한 여유가 필요합니다. 그 여유를 여행에서 찾습니다. 매일 반복되는
+              일상에서 벗어나, 만끽하는 해방감 그 자체가 힐링이 되는것입니다.
+              그동안 함께 하지 못한 가족, 친구, 지인들과 함께 떠나는 힐링여행에
+              당신을 초대합니다.
+            </p>
           </div>
-          <div class="flex flex-wrap flex-row justify-center gap-4">
-            <small>
-              <i
-                class="mr-1 bi bi-check bg-blue-100 border border-blue-200 rounded-full w-[21px] h-[21px] inline-block text-center text-blue-600"
-              ></i>
-              <span>Safe</span>
-            </small>
-            <small>
-              <i
-                class="mr-1 bi bi-check bg-blue-100 border border-blue-200 rounded-full w-[21px] h-[21px] inline-block text-center text-blue-600"
-              ></i>
-              <span>Reliable</span>
-            </small>
-            <small>
-              <i
-                class="mr-1 bi bi-check bg-blue-100 border border-blue-200 rounded-full w-[21px] h-[21px] inline-block text-center text-blue-600"
-              ></i>
-              <span>Healing</span>
-            </small>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center"
+          >
+            <div
+              class="flex flex-col items-center text-center max-w-[340px] mx-auto"
+            >
+              <div
+                class="border-2 border-blue-50 bg-blue-100 rounded-full text-blue-600 w-12 h-12 flex items-center justify-center mb-4"
+              >
+                <i class="bi bi-compass-fill text-2xl"></i>
+                <!-- Changed to compass for day tours -->
+              </div>
+              <h2 class="text-xl font-semibold text-gray-800 mb-2">
+                당일 코스투어
+              </h2>
+              <p class="text-gray-500 text-sm">
+                엘에이 근교(죠시야 트리, 온천,샌디애고등) 맞춤투어<br />
+                인원: 최대 6명/10시간/150-200불/1인당
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col items-center text-center max-w-[340px] mx-auto"
+            >
+              <div
+                class="border-2 border-blue-50 bg-blue-100 rounded-full text-blue-600 w-12 h-12 flex items-center justify-center mb-4"
+              >
+                <i class="bi bi-airplane-fill text-2xl"></i>
+                <!-- Changed to airplane for airport services -->
+              </div>
+              <h2 class="text-xl font-semibold text-gray-800 mb-2">
+                공항 이벤트 라이드 픽업
+              </h2>
+              <p class="text-gray-500 text-sm">
+                공항 세미나 이벤트 픽업 및 라이드를<br />
+                경험있는 전문기사의 안전운행서비스<br />
+                24시간 /주7일 /100-150불
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col items-center text-center max-w-[340px] mx-auto"
+            >
+              <div
+                class="border-2 border-blue-50 bg-blue-100 rounded-full text-blue-600 w-12 h-12 flex items-center justify-center mb-4"
+              >
+                <i class="bi bi-geo-fill text-2xl"></i>
+                <!-- Changed to mountain for west coast travel -->
+              </div>
+              <h2 class="text-xl font-semibold text-gray-800 mb-2">
+                낭만적 미서부여행
+              </h2>
+              <p class="text-gray-500 text-sm">
+                멋진경치,광활한 대자연을 자유분방한<br />
+                느낌으로 만끽할수 있는 낭만적미서부 여행<br />
+                기간 : 1- 3일 / 인원 : 6-10명
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col items-center text-center max-w-[340px] mx-auto"
+            >
+              <div
+                class="border-2 border-blue-50 bg-blue-100 rounded-full text-blue-600 w-12 h-12 flex items-center justify-center mb-4"
+              >
+                <i class="bi bi-heart-pulse-fill text-2xl"></i>
+                <!-- Changed to heart-pulse for health/healing -->
+              </div>
+              <h2 class="text-xl font-semibold text-gray-800 mb-2">
+                건강디톡스 / 힐링캠프
+              </h2>
+              <p class="text-gray-500 text-sm text-center">
+                지친일상에서 벗어나 아름다운 자연을 보며 지인들과 함께 떠나는
+                건강티톡스여행 / 힐링캠프<br />
+                기간: 2박3일 인원: 6-10명
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col items-center text-center max-w-[340px] mx-auto"
+            >
+              <div
+                class="border-2 border-blue-50 bg-blue-100 rounded-full text-blue-600 w-12 h-12 flex items-center justify-center mb-4"
+              >
+                <i class="bi bi-mortarboard-fill text-2xl"></i>
+                <!-- Changed to mortarboard for youth leadership -->
+              </div>
+              <h2 class="text-xl font-semibold text-gray-800 mb-2">
+                YOUTH리더쉽 캠프
+              </h2>
+              <p class="text-gray-500 text-sm text-center">
+                청소년 및 대학생들의 비전트립 미국유명도시를 방문하며,Physical,
+                Emotional, Spiritual 균형있는 강의와 함께 팀워크를 통해
+                비전,재능,열정을 배우는 리더쉽훈련<br />
+                기간: 최대 3주 인원: 최대 20명
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col items-center text-center max-w-[340px] mx-auto"
+            >
+              <div
+                class="border-2 border-blue-50 bg-blue-100 rounded-full text-blue-600 w-12 h-12 flex items-center justify-center mb-4"
+              >
+                <i class="bi bi-map-fill text-2xl"></i>
+                <!-- Changed to map for cross-country travel -->
+              </div>
+              <h2 class="text-xl font-semibold text-gray-800 mb-2">
+                미국횡단여행
+              </h2>
+              <p class="text-gray-500 text-sm text-center">
+                인생의 여행버킷리스트의 하나인 미국횡단여행 미국에서 가장가고
+                싶은도시들을 방문하며 더불어 장거리의 편안한 차량으로 잊지못할
+                추억의 여행<br />
+                기간: 최대 3주 인원6-10명
+              </p>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="-z-10 absolute top-0 w-full h-[200px] bg-gradiant"></div>
-    </section>
-    <section class="px-6 md:px-2">
-      <div
-        data-aos="fade-up"
-        class="relative mx-auto sm:px-7 px-4 max-w-screen-xl py-10 flex items-center aos-init aos-animate"
-      >
-        <img
-          src="./imgs/hero.png"
-          class="mx-auto w-full max-w-[1000px] rounded shadow-2xl"
-          alt=""
-        />
-      </div>
-    </section>
-    <!-- <section class="bg-gray-50"> -->
-    <!--   <div -->
-    <!--     class="flex flex-col gap-8 mx-auto sm:px-7 px-4 max-w-screen-xl py-20 mt-20" -->
-    <!--   > -->
-    <!--     <div class="flex flex-col gap-4"> -->
-    <!--       <h2 class="text-4xl font-bold text-center">Lorem ipsum dolor</h2> -->
-    <!--       <p class="text-base md:text-lg text-center"> -->
-    <!--         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque -->
-    <!--         autem eos magnam alias, dolorum... -->
-    <!--       </p> -->
-    <!--     </div> -->
-    <!--     <ul -->
-    <!--       class="flex flex-row gap-5 justify-center flex-wrap mx-auto items-center" -->
-    <!--     > -->
-    <!--       <li> -->
-    <!--         <img -->
-    <!--           class="grayscale max-w-[140px]" -->
-    <!--           src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" -->
-    <!--           alt="" -->
-    <!--         /> -->
-    <!--       </li> -->
-    <!--       <li> -->
-    <!--         <img -->
-    <!--           class="grayscale max-w-[140px]" -->
-    <!--           src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/2560px-Coinbase.svg.png" -->
-    <!--           alt="" -->
-    <!--         /> -->
-    <!--       </li> -->
-    <!--       <li> -->
-    <!--         <img -->
-    <!--           class="grayscale max-w-[140px]" -->
-    <!--           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png" -->
-    <!--           alt="" -->
-    <!--         /> -->
-    <!--       </li> -->
-    <!--       <li> -->
-    <!--         <img -->
-    <!--           class="grayscale max-w-[140px]" -->
-    <!--           src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/1280px-Firebase_Logo.svg.png" -->
-    <!--           alt="" -->
-    <!--         /> -->
-    <!--       </li> -->
-    <!--       <li> -->
-    <!--         <img -->
-    <!--           class="grayscale max-w-[140px]" -->
-    <!--           src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" -->
-    <!--           alt="" -->
-    <!--         /> -->
-    <!--       </li> -->
-    <!--       <li> -->
-    <!--         <img -->
-    <!--           class="grayscale max-w-[140px]" -->
-    <!--           src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/2560px-Coinbase.svg.png" -->
-    <!--           alt="" -->
-    <!--         /> -->
-    <!--       </li> -->
-    <!--       <li> -->
-    <!--         <img -->
-    <!--           class="grayscale max-w-[140px]" -->
-    <!--           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png" -->
-    <!--           alt="" -->
-    <!--         /> -->
-    <!--       </li> -->
-    <!--       <li> -->
-    <!--         <img -->
-    <!--           class="grayscale max-w-[140px]" -->
-    <!--           src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/1280px-Firebase_Logo.svg.png" -->
-    <!--           alt="" -->
-    <!--         /> -->
-    <!--       </li> -->
-    <!--       <li> -->
-    <!--         <img -->
-    <!--           class="grayscale max-w-[140px]" -->
-    <!--           src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" -->
-    <!--           alt="" -->
-    <!--         /> -->
-    <!--       </li> -->
-    <!--       <li> -->
-    <!--         <img -->
-    <!--           class="grayscale max-w-[140px]" -->
-    <!--           src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Coinbase.svg/2560px-Coinbase.svg.png" -->
-    <!--           alt="" -->
-    <!--         /> -->
-    <!--       </li> -->
-    <!--       <li> -->
-    <!--         <img -->
-    <!--           class="grayscale max-w-[140px]" -->
-    <!--           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png" -->
-    <!--           alt="" -->
-    <!--         /> -->
-    <!--       </li> -->
-    <!--     </ul> -->
-    <!--   </div> -->
-    <!-- </section> -->
-    <!-- <section> -->
-    <!--   <div -->
-    <!--     class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20 flex flex-col gap-10" -->
-    <!--   > -->
-    <!--     <div class="flex flex-col gap-4"> -->
-    <!--       <h2 class="text-4xl font-bold text-center">Lorem ipsum dolor</h2> -->
-    <!--       <p class="text-base md:text-lg text-center max-w-[600px] mx-auto"> -->
-    <!--         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque -->
-    <!--         autem eos magnam alias, dolorum... -->
-    <!--       </p> -->
-    <!--     </div> -->
-    <!--     <div -->
-    <!--       class="flex flex-row gap-5 justify-center flex-wrap mx-auto items-center" -->
-    <!--     > -->
-    <!--       <div class="flex flex-col text-center max-w-[340px]"> -->
-    <!--         <div -->
-    <!--           class="border-2 border-blue-50 bg-blue-100 mx-auto rounded-full text-blue-600 w-12 h-12 flex" -->
-    <!--         > -->
-    <!--           <i class="bi bi-badge-8k-fill text-2xl my-auto mx-auto"></i> -->
-    <!--         </div> -->
-    <!--         <h2 class="mt-4 text-xl font-semibold text-gray-800"> -->
-    <!--           Lorem ipsum et -->
-    <!--         </h2> -->
-    <!--         <p class="mt-2 text-gray-500 text-sm"> -->
-    <!--           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim -->
-    <!--           fusce tortor, ac sed malesuada blandit. Et mi gravida sem feugiat. -->
-    <!--         </p> -->
-    <!--       </div> -->
-    <!--       <div class="flex flex-col text-center max-w-[340px]"> -->
-    <!--         <div -->
-    <!--           class="border-2 border-blue-50 bg-blue-100 mx-auto rounded-full text-blue-600 w-12 h-12 flex" -->
-    <!--         > -->
-    <!--           <i class="bi bi-badge-8k-fill text-2xl my-auto mx-auto"></i> -->
-    <!--         </div> -->
-    <!--         <h2 class="mt-4 text-xl font-semibold text-gray-800"> -->
-    <!--           Fully ready -->
-    <!--         </h2> -->
-    <!--         <p class="mt-2 text-gray-500 text-sm"> -->
-    <!--           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim -->
-    <!--           fusce tortor, ac sed malesuada blandit. Et mi gravida sem feugiat. -->
-    <!--         </p> -->
-    <!--       </div> -->
-    <!--       <div class="flex flex-col text-center max-w-[340px]"> -->
-    <!--         <div -->
-    <!--           class="border-2 border-blue-50 bg-blue-100 mx-auto rounded-full text-blue-600 w-12 h-12 flex" -->
-    <!--         > -->
-    <!--           <i class="bi bi-badge-8k-fill text-2xl my-auto mx-auto"></i> -->
-    <!--         </div> -->
-    <!--         <h2 class="mt-4 text-xl font-semibold text-gray-800">Super yes</h2> -->
-    <!--         <p class="mt-2 text-gray-500 text-sm"> -->
-    <!--           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim -->
-    <!--           fusce tortor, ac sed malesuada blandit. Et mi gravida sem feugiat. -->
-    <!--         </p> -->
-    <!--       </div> -->
-    <!--       <div class="flex flex-col text-center max-w-[340px]"> -->
-    <!--         <div -->
-    <!--           class="border-2 border-blue-50 bg-blue-100 mx-auto rounded-full text-blue-600 w-12 h-12 flex" -->
-    <!--         > -->
-    <!--           <i class="bi bi-badge-8k-fill text-2xl my-auto mx-auto"></i> -->
-    <!--         </div> -->
-    <!--         <h2 class="mt-4 text-xl font-semibold text-gray-800"> -->
-    <!--           Lorem ipsum et -->
-    <!--         </h2> -->
-    <!--         <p class="mt-2 text-gray-500 text-sm"> -->
-    <!--           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim -->
-    <!--           fusce tortor, ac sed malesuada blandit. Et mi gravida sem feugiat. -->
-    <!--         </p> -->
-    <!--       </div> -->
-    <!--       <div class="flex flex-col text-center max-w-[340px]"> -->
-    <!--         <div -->
-    <!--           class="border-2 border-blue-50 bg-blue-100 mx-auto rounded-full text-blue-600 w-12 h-12 flex" -->
-    <!--         > -->
-    <!--           <i class="bi bi-badge-8k-fill text-2xl my-auto mx-auto"></i> -->
-    <!--         </div> -->
-    <!--         <h2 class="mt-4 text-xl font-semibold text-gray-800"> -->
-    <!--           Fully ready -->
-    <!--         </h2> -->
-    <!--         <p class="mt-2 text-gray-500 text-sm"> -->
-    <!--           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim -->
-    <!--           fusce tortor, ac sed malesuada blandit. Et mi gravida sem feugiat. -->
-    <!--         </p> -->
-    <!--       </div> -->
-    <!--       <div class="flex flex-col text-center max-w-[340px]"> -->
-    <!--         <div -->
-    <!--           class="border-2 border-blue-50 bg-blue-100 mx-auto rounded-full text-blue-600 w-12 h-12 flex" -->
-    <!--         > -->
-    <!--           <i class="bi bi-badge-8k-fill text-2xl my-auto mx-auto"></i> -->
-    <!--         </div> -->
-    <!--         <h2 class="mt-4 text-xl font-semibold text-gray-800">Super yes</h2> -->
-    <!--         <p class="mt-2 text-gray-500 text-sm"> -->
-    <!--           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim -->
-    <!--           fusce tortor, ac sed malesuada blandit. Et mi gravida sem feugiat. -->
-    <!--         </p> -->
-    <!--       </div> -->
-    <!--     </div> -->
-    <!--   </div> -->
-    <!-- </section> -->
-    <!---->
-    <!-- <section class="bg-gray-50"> -->
-    <!--   <div -->
-    <!--     class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20 flex gap-10 flex flex-col lg:flex-row items-center" -->
-    <!--   > -->
-    <!--     <div class="flex flex-col gap-4 w-full max-w-[400px]"> -->
-    <!--       <div class="flex gap-1"> -->
-    <!--         <i class="bi bi-star-fill text-blue-600"></i> -->
-    <!--         <i class="bi bi-star-fill text-blue-600"></i> -->
-    <!--         <i class="bi bi-star-fill text-blue-600"></i> -->
-    <!--         <i class="bi bi-star-fill text-blue-600"></i> -->
-    <!--         <i class="bi bi-star-fill text-blue-600"></i> -->
-    <!--       </div> -->
-    <!--       <div> -->
-    <!--         <h2 class="text-2xl font-bold">Lorem ipsum dolor sit</h2> -->
-    <!--         <p class="text-gray-600 text-base"> -->
-    <!--           Dolorem cupiditate voluptatem veniam reprehenderit. -->
-    <!--         </p> -->
-    <!--       </div> -->
-    <!--       <div class="flex gap-4 text-center"> -->
-    <!--         <a -->
-    <!--           href="" -->
-    <!--           class="text-xs md:text-base bg-white border rounded font-bold py-2 px-6 hover:bg-gray-50" -->
-    <!--           >Book a demo</a -->
-    <!--         > -->
-    <!--         <a -->
-    <!--           href="" -->
-    <!--           class="text-xs md:text-base bg-blue-500 border border-blue-500 rounded text-white font-bold py-2 px-6 hover:bg-blue-600" -->
-    <!--           >Get started - it's free</a -->
-    <!--         > -->
-    <!--       </div> -->
-    <!--     </div> -->
-    <!--     <div class="flex flex-col gap-4 w-full"> -->
-    <!--       <div class="w-full flex flex-col md:flex-row gap-4"> -->
-    <!--         <div -->
-    <!--           class="p-6 rounded border bg-white flex flex-col gap-6 w-full md:w-1/2 shadow-xl" -->
-    <!--         > -->
-    <!--           <p> -->
-    <!--             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. -->
-    <!--             Consectetur reprehenderit quibusdam est consequatur porro, -->
-    <!--             repellendus optio officiis? Ab, commodi, aperiam iusto, enim -->
-    <!--             deleniti a obcaecati quod velit quis unde iste." -->
-    <!--           </p> -->
-    <!--           <div class="flex items-center gap-4"> -->
-    <!--             <div> -->
-    <!--               <img -->
-    <!--                 class="w-20 rounded-full border" -->
-    <!--                 src="https://randomuser.me/api/portraits/men/34.jpg" -->
-    <!--                 alt="" -->
-    <!--               /> -->
-    <!--             </div> -->
-    <!--             <div class="flex flex-col"> -->
-    <!--               <strong>Firstname lastname</strong> -->
-    <!--               <small>CEO of yes</small> -->
-    <!--             </div> -->
-    <!--           </div> -->
-    <!--         </div> -->
-    <!--         <div -->
-    <!--           class="p-6 rounded border bg-white flex flex-col gap-6 w-full md:w-1/2 shadow-xl" -->
-    <!--         > -->
-    <!--           <p> -->
-    <!--             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. -->
-    <!--             Consectetur reprehenderit quibusdam est consequatur porro, -->
-    <!--             repellendus optio officiis? Ab, commodi, aperiam iusto, enim -->
-    <!--             deleniti a obcaecati quod velit quis unde iste." -->
-    <!--           </p> -->
-    <!--           <div class="flex items-center gap-4"> -->
-    <!--             <div> -->
-    <!--               <img -->
-    <!--                 class="w-20 rounded-full border" -->
-    <!--                 src="https://randomuser.me/api/portraits/men/34.jpg" -->
-    <!--                 alt="" -->
-    <!--               /> -->
-    <!--             </div> -->
-    <!--             <div class="flex flex-col"> -->
-    <!--               <strong>Firstname lastname</strong> -->
-    <!--               <small>CEO of yes</small> -->
-    <!--             </div> -->
-    <!--           </div> -->
-    <!--         </div> -->
-    <!--       </div> -->
-    <!--       <div class="w-full flex flex-col md:flex-row gap-4"> -->
-    <!--         <div -->
-    <!--           class="p-6 rounded border bg-white flex flex-col gap-6 w-full md:w-1/2 shadow-xl" -->
-    <!--         > -->
-    <!--           <p> -->
-    <!--             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. -->
-    <!--             Consectetur reprehenderit quibusdam est consequatur porro, -->
-    <!--             repellendus optio officiis? Ab, commodi, aperiam iusto, enim -->
-    <!--             deleniti a obcaecati quod velit quis unde iste." -->
-    <!--           </p> -->
-    <!--           <div class="flex items-center gap-4"> -->
-    <!--             <div> -->
-    <!--               <img -->
-    <!--                 class="w-20 rounded-full border" -->
-    <!--                 src="https://randomuser.me/api/portraits/men/34.jpg" -->
-    <!--                 alt="" -->
-    <!--               /> -->
-    <!--             </div> -->
-    <!--             <div class="flex flex-col"> -->
-    <!--               <strong>Firstname lastname</strong> -->
-    <!--               <small>CEO of yes</small> -->
-    <!--             </div> -->
-    <!--           </div> -->
-    <!--         </div> -->
-    <!--         <div -->
-    <!--           class="p-6 rounded border bg-white flex flex-col gap-6 w-full md:w-1/2 shadow-xl" -->
-    <!--         > -->
-    <!--           <p> -->
-    <!--             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. -->
-    <!--             Consectetur reprehenderit quibusdam est consequatur porro, -->
-    <!--             repellendus optio officiis? Ab, commodi, aperiam iusto, enim -->
-    <!--             deleniti a obcaecati quod velit quis unde iste." -->
-    <!--           </p> -->
-    <!--           <div class="flex items-center gap-4"> -->
-    <!--             <div> -->
-    <!--               <img -->
-    <!--                 class="w-20 rounded-full border" -->
-    <!--                 src="https://randomuser.me/api/portraits/men/34.jpg" -->
-    <!--                 alt="" -->
-    <!--               /> -->
-    <!--             </div> -->
-    <!--             <div class="flex flex-col"> -->
-    <!--               <strong>Firstname lastname</strong> -->
-    <!--               <small>CEO of yes</small> -->
-    <!--             </div> -->
-    <!--           </div> -->
-    <!--         </div> -->
-    <!--       </div> -->
-    <!--     </div> -->
-    <!--   </div> -->
-    <!-- </section> -->
-    <!-- <section> -->
-    <!--   <div class="px-2 py-20 mx-auto max-w-7xl"> -->
-    <!--     <div class="grid grid-cols-1 gap-6 lg:gap-12 lg:grid-cols-3"> -->
-    <!--       <div class="text-center lg:text-left"> -->
-    <!--         <div> -->
-    <!--           <h2 class="text-2xl font-bold">Lorem ipsum dolor sit</h2> -->
-    <!--           <p class="text-gray-600 text-base"> -->
-    <!--             Dolorem cupiditate voluptatem veniam reprehenderit. -->
-    <!--           </p> -->
-    <!--         </div> -->
-    <!--       </div> -->
-    <!--       <div -->
-    <!--         class="relative w-full mx-auto font-normal lg:col-span-2" -->
-    <!--         x-data="{ -->
-    <!--     activeAccordion: '', -->
-    <!--     setActiveAccordion(id) { -->
-    <!--     this.activeAccordion = (this.activeAccordion == id) ? '' : id -->
-    <!--     } -->
-    <!--     }" -->
-    <!--       > -->
-    <!--         <div -->
-    <!--           class="cursor-pointer group text-gray-600 hover:text-zinc-500" -->
-    <!--           x-data="{ id: $id('accordion') }" -->
-    <!--           :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }" -->
-    <!--         > -->
-    <!--           <button -->
-    <!--             class="flex items-center justify-between w-full p-4 pb-1 text-sm text-left select-none lg:text-base" -->
-    <!--             @click="setActiveAccordion(id)" -->
-    <!--           > -->
-    <!--             <span>How does bookme work?</span> -->
-    <!--             <svg -->
-    <!--               class="w-5 h-5 duration-300 ease-out text-zinc-500" -->
-    <!--               fill="none" -->
-    <!--               viewBox="0 0 24 24" -->
-    <!--               xmlns="http://www.w3.org/2000/svg" -->
-    <!--               stroke="currentColor" -->
-    <!--               stroke-width="1.5" -->
-    <!--               :class="{ '-rotate-[45deg]': activeAccordion==id }" -->
-    <!--             > -->
-    <!--               <path -->
-    <!--                 d="M12 6v12m6-6H6" -->
-    <!--                 stroke-linecap="round" -->
-    <!--                 stroke-linejoin="round" -->
-    <!--               ></path> -->
-    <!--             </svg> -->
-    <!--           </button> -->
-    <!--           <div -->
-    <!--             x-collapse="" -->
-    <!--             x-show="activeAccordion==id" -->
-    <!--             style="height: 0px; overflow: hidden; display: none" -->
-    <!--             hidden="" -->
-    <!--           > -->
-    <!--             <div class="p-4 pt-2 text-sm text-gray-500"> -->
-    <!--               Lorem ipsum dolor sit amet consectetur, adipisicing elit. -->
-    <!--               Excepturi laboriosam vitae reiciendis corrupti! Explicabo, -->
-    <!--               libero reiciendis iste ipsa voluptatem, cupiditate ab culpa -->
-    <!--               expedita asperiores at quasi laborum tempore magnam corrupti. -->
-    <!--             </div> -->
-    <!--           </div> -->
-    <!--         </div> -->
-    <!--         <div -->
-    <!--           class="text-gray-600 cursor-pointer group hover:text-zinc-500" -->
-    <!--           x-data="{ id: $id('accordion') }" -->
-    <!--           :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }" -->
-    <!--         > -->
-    <!--           <button -->
-    <!--             class="flex items-center justify-between w-full p-4 pb-1 text-sm text-left select-none lg:text-base" -->
-    <!--             @click="setActiveAccordion(id)" -->
-    <!--           > -->
-    <!--             <span>What type of bookme?</span> -->
-    <!--             <svg -->
-    <!--               class="w-5 h-5 duration-300 ease-out text-zinc-500" -->
-    <!--               fill="none" -->
-    <!--               viewBox="0 0 24 24" -->
-    <!--               xmlns="http://www.w3.org/2000/svg" -->
-    <!--               stroke="currentColor" -->
-    <!--               stroke-width="1.5" -->
-    <!--               :class="{ '-rotate-[45deg]': activeAccordion==id }" -->
-    <!--             > -->
-    <!--               <path -->
-    <!--                 d="M12 6v12m6-6H6" -->
-    <!--                 stroke-linecap="round" -->
-    <!--                 stroke-linejoin="round" -->
-    <!--               ></path> -->
-    <!--             </svg> -->
-    <!--           </button> -->
-    <!--           <div -->
-    <!--             x-collapse="" -->
-    <!--             x-show="activeAccordion==id" -->
-    <!--             style="display: none; height: 0px; overflow: hidden" -->
-    <!--             hidden="" -->
-    <!--           > -->
-    <!--             <div class="p-4 pt-2 text-sm text-gray-500"> -->
-    <!--               Lorem ipsum, dolor sit amet consectetur adipisicing elit. -->
-    <!--               Nostrum ratione expedita possimus inventore in. Explicabo, -->
-    <!--               quasi repellendus a dolore totam laudantium, molestias quis -->
-    <!--               reiciendis rerum vero, numquam sint earum voluptatum? -->
-    <!--             </div> -->
-    <!--           </div> -->
-    <!--         </div> -->
-    <!--         <div -->
-    <!--           class="text-gray-600 cursor-pointer group hover:text-zinc-500" -->
-    <!--           x-data="{ id: $id('accordion') }" -->
-    <!--           :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }" -->
-    <!--         > -->
-    <!--           <button -->
-    <!--             class="flex items-center justify-between w-full p-4 pb-1 text-sm text-left select-none lg:text-base" -->
-    <!--             @click="setActiveAccordion(id)" -->
-    <!--           > -->
-    <!--             <span>Can I cancel my subscription?</span> -->
-    <!--             <svg -->
-    <!--               class="w-5 h-5 duration-300 ease-out text-zinc-500" -->
-    <!--               fill="none" -->
-    <!--               viewBox="0 0 24 24" -->
-    <!--               xmlns="http://www.w3.org/2000/svg" -->
-    <!--               stroke="currentColor" -->
-    <!--               stroke-width="1.5" -->
-    <!--               :class="{ '-rotate-[45deg]': activeAccordion==id }" -->
-    <!--             > -->
-    <!--               <path -->
-    <!--                 d="M12 6v12m6-6H6" -->
-    <!--                 stroke-linecap="round" -->
-    <!--                 stroke-linejoin="round" -->
-    <!--               ></path> -->
-    <!--             </svg> -->
-    <!--           </button> -->
-    <!--           <div -->
-    <!--             x-collapse="" -->
-    <!--             x-show="activeAccordion==id" -->
-    <!--             style="display: none; height: 0px; overflow: hidden" -->
-    <!--             hidden="" -->
-    <!--           > -->
-    <!--             <div class="p-4 pt-2 text-sm text-gray-500"> -->
-    <!--               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum -->
-    <!--               ex cum repellendus eligendi maxime magni molestiae saepe -->
-    <!--               beatae, excepturi id dolores recusandae ea perferendis -->
-    <!--               repudiandae? Ea deleniti blanditiis quae iusto! -->
-    <!--             </div> -->
-    <!--           </div> -->
-    <!--         </div> -->
-    <!--         <div -->
-    <!--           class="text-gray-600 cursor-pointer group hover:text-zinc-500" -->
-    <!--           x-data="{ id: $id('accordion') }" -->
-    <!--           :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }" -->
-    <!--         > -->
-    <!--           <button -->
-    <!--             class="flex items-center justify-between w-full p-4 pb-1 text-sm text-left select-none lg:text-base" -->
-    <!--             @click="setActiveAccordion(id)" -->
-    <!--           > -->
-    <!--             <span>is bookme safe?</span> -->
-    <!--             <svg -->
-    <!--               class="w-5 h-5 duration-300 ease-out text-zinc-500" -->
-    <!--               fill="none" -->
-    <!--               viewBox="0 0 24 24" -->
-    <!--               xmlns="http://www.w3.org/2000/svg" -->
-    <!--               stroke="currentColor" -->
-    <!--               stroke-width="1.5" -->
-    <!--               :class="{ '-rotate-[45deg]': activeAccordion==id }" -->
-    <!--             > -->
-    <!--               <path -->
-    <!--                 d="M12 6v12m6-6H6" -->
-    <!--                 stroke-linecap="round" -->
-    <!--                 stroke-linejoin="round" -->
-    <!--               ></path> -->
-    <!--             </svg> -->
-    <!--           </button> -->
-    <!--           <div -->
-    <!--             x-collapse="" -->
-    <!--             x-show="activeAccordion==id" -->
-    <!--             style="display: none; height: 0px; overflow: hidden" -->
-    <!--             hidden="" -->
-    <!--           > -->
-    <!--             <div class="p-4 pt-2 text-sm text-gray-500"> -->
-    <!--               Lorem ipsum dolor sit, amet consectetur adipisicing elit. -->
-    <!--               Placeat aspernatur iste ab optio magni veritatis voluptatibus -->
-    <!--               quaerat. Error ipsam dolore, explicabo consequatur incidunt -->
-    <!--               rem culpa, est corporis nihil necessitatibus cum! -->
-    <!--             </div> -->
-    <!--           </div> -->
-    <!--         </div> -->
-    <!--         <div -->
-    <!--           class="text-gray-600 cursor-pointer group hover:text-zinc-500" -->
-    <!--           x-data="{ id: $id('accordion') }" -->
-    <!--           :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }" -->
-    <!--         > -->
-    <!--           <button -->
-    <!--             class="flex items-center justify-between w-full p-4 pb-1 text-sm text-left select-none lg:text-base" -->
-    <!--             @click="setActiveAccordion(id)" -->
-    <!--           > -->
-    <!--             <span>Can I use 2 account?</span> -->
-    <!--             <svg -->
-    <!--               class="w-5 h-5 duration-300 ease-out text-zinc-500" -->
-    <!--               fill="none" -->
-    <!--               viewBox="0 0 24 24" -->
-    <!--               xmlns="http://www.w3.org/2000/svg" -->
-    <!--               stroke="currentColor" -->
-    <!--               stroke-width="1.5" -->
-    <!--               :class="{ '-rotate-[45deg]': activeAccordion==id }" -->
-    <!--             > -->
-    <!--               <path -->
-    <!--                 d="M12 6v12m6-6H6" -->
-    <!--                 stroke-linecap="round" -->
-    <!--                 stroke-linejoin="round" -->
-    <!--               ></path> -->
-    <!--             </svg> -->
-    <!--           </button> -->
-    <!--           <div -->
-    <!--             x-collapse="" -->
-    <!--             x-show="activeAccordion==id" -->
-    <!--             style="display: none; height: 0px; overflow: hidden" -->
-    <!--             hidden="" -->
-    <!--           > -->
-    <!--             <div class="p-4 pt-2 text-sm text-gray-500"> -->
-    <!--               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est -->
-    <!--               placeat veritatis ex perspiciatis, incidunt, quos quia -->
-    <!--               accusantium recusandae aspernatur inventore nulla, esse aut -->
-    <!--               expedita numquam rem! Quibusdam deleniti magni rerum. -->
-    <!--             </div> -->
-    <!--           </div> -->
-    <!--         </div> -->
-    <!--         <div -->
-    <!--           class="text-gray-600 cursor-pointer group hover:text-zinc-500" -->
-    <!--           x-data="{ id: $id('accordion') }" -->
-    <!--           :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }" -->
-    <!--         > -->
-    <!--           <button -->
-    <!--             class="flex items-center justify-between w-full p-4 pb-1 text-sm text-left select-none lg:text-base" -->
-    <!--             @click="setActiveAccordion(id)" -->
-    <!--           > -->
-    <!--             <span>Is bookme a free service?</span> -->
-    <!--             <svg -->
-    <!--               class="w-5 h-5 duration-300 ease-out text-zinc-500" -->
-    <!--               fill="none" -->
-    <!--               viewBox="0 0 24 24" -->
-    <!--               xmlns="http://www.w3.org/2000/svg" -->
-    <!--               stroke="currentColor" -->
-    <!--               stroke-width="1.5" -->
-    <!--               :class="{ '-rotate-[45deg]': activeAccordion==id }" -->
-    <!--             > -->
-    <!--               <path -->
-    <!--                 d="M12 6v12m6-6H6" -->
-    <!--                 stroke-linecap="round" -->
-    <!--                 stroke-linejoin="round" -->
-    <!--               ></path> -->
-    <!--             </svg> -->
-    <!--           </button> -->
-    <!--           <div -->
-    <!--             x-collapse="" -->
-    <!--             x-show="activeAccordion==id" -->
-    <!--             style="display: none; height: 0px; overflow: hidden" -->
-    <!--             hidden="" -->
-    <!--           > -->
-    <!--             <div class="p-4 pt-2 text-sm text-gray-500"> -->
-    <!--               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, -->
-    <!--               consequuntur optio tempore voluptatibus quae commodi voluptate -->
-    <!--               excepturi pariatur vitae odit eius placeat dicta cum, culpa -->
-    <!--               quod similique, incidunt delectus est. -->
-    <!--             </div> -->
-    <!--           </div> -->
-    <!--         </div> -->
-    <!--       </div> -->
-    <!--     </div> -->
-    <!--   </div> -->
-    <!-- </section> -->
-    <footer>
-      <div class="px-2 py-20 mx-auto max-w-7xl">
+    <footer class="bg-gray-50 border-t-2">
+      <div class="mx-auto max-w-screen-xl px-6 py-10">
         <div
-          class="pt-12 border-t border-gray-300 flex flex-col md:flex-row gap-10 items-center"
+          class="flex flex-col md:flex-row gap-10 items-center justify-between"
         >
-          <div class="text-black flex flex-col">
-            <a href="/" class="font-bold text-xl mx-auto md:mx-0">
-              <span class="text-blue-500"
-                ><i class="bi bi-bookmark-fill"></i> </span
-              >VanPooler
-            </a>
-          </div>
-          <nav class="ml-0 md:ml-auto">
-            <ul class="flex flex-row gap-4">
-              <li>
-                <a href="" class="hover:text-blue-500">Pricing</a>
-              </li>
-              <li>
-                <a href="" class="hover:text-blue-500">Contact</a>
-              </li>
+          <!-- Footer Logo -->
+          <a href="/" class="font-bold text-xl">
+            <span class="text-blue-500">
+              <i class="bi bi-bookmark-fill"></i>
+            </span>
+            VanPooler
+          </a>
+
+          <!-- Footer Links -->
+          <nav>
+            <ul class="flex gap-4">
+              <li><a href="" class="hover:text-blue-500">Contact</a></li>
             </ul>
           </nav>
         </div>
+
+        <!-- Footer Info -->
         <div
-          class="flex flex-col pt-12 md:flex-row md:items-center md:justify-between"
+          class="flex flex-col md:flex-row md:justify-between gap-6 pt-12 text-sm text-gray-500"
         >
-          <p class="text-center md:text-left">
-            <span class="mx-auto mt-2 text-sm text-gray-500 lg:mx-0">
-              ©copyright 2024
-            </span>
+          <p>
+            <strong>Tour Guide Business License:</strong> BL-036273 City of
+            Buena Park<br />
+            Operated as owner's vehicle until business final setup is complete
+          </p>
+          <p>
+            <strong>Contact Information:</strong><br />
+            Phone: (555) 123-4567<br />
+            Email: info@vanpooler.com<br />
+            Address: 123 Main St, Buena Park, CA 90620
+          </p>
+        </div>
+
+        <!-- Footer Copyright -->
+        <div class="text-center pt-6">
+          <p class="text-sm text-gray-500">
+            vanpooler©copyright 2024. All rights reserved.
           </p>
         </div>
       </div>
