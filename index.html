@@ -50,7 +50,7 @@
   </head>
 
   <body class="antialiased">
-    <header class="border-b-2 bg-gray-50">
+    <header>
       <div
         class="mx-auto max-w-screen-xl px-6 py-4 flex items-center justify-between"
       >
@@ -60,31 +60,43 @@
             src="imgs/logo.jpg"
             class="h-[50px] w-[50px] rounded-full object-cover"
           />
-          <h1 class="text-xl font-bold">VanPooler 밴불러</h1>
+          <h1 id="title" class="text-xl font-bold">VanPooler 밴불러</h1>
         </div>
 
-        <!-- Navigation Links -->
-        <nav class="hidden md:flex md:items-center md:gap-8">
-          <ul class="flex gap-4 text-sm md:text-base">
+        <nav class="flex flex-wrap items-center justify-between gap-2 md:gap-8">
+          <ul class="flex items-center gap-2 md:gap-4 text-sm md:text-base">
             <li>
               <a
+                id="contact-link"
                 href="mailto:vanpooler153@gmail.com"
-                class="hover:text-blue-500"
+                class="text-blue-600 hover:text-blue-700 font-semibold"
                 >Contact</a
               >
             </li>
           </ul>
+
+          <button
+            id="translate-btn"
+            class="text-gray-500 text-xl p-2 rounded-full hover:bg-gray-100 hover:text-blue-500 transition-all"
+            aria-label="Translate"
+          >
+            <i class="bi bi-globe"></i>
+          </button>
         </nav>
       </div>
     </header>
+
     <section>
       <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20">
         <div class="flex flex-col gap-10">
           <div class="text-center">
-            <h2 class="text-4xl font-bold mb-4">
+            <h2 id="section-title" class="text-4xl font-bold mb-4">
               맞춤투어관광, 픽업라이드 서비스
             </h2>
-            <p class="text-base md:text-lg max-w-[800px] mx-auto text-gray-600">
+            <p
+              id="section-desc"
+              class="text-base md:text-lg max-w-[800px] mx-auto text-gray-600"
+            >
               바쁜 현대인들에게는 삶에 지친 자신을 위로하고 스스로 되돌아보기
               위한 여유가 필요합니다. 그 여유를 여행에서 찾습니다. 매일 반복되는
               일상에서 벗어나, 만끽하는 해방감 그 자체가 힐링이 되는것입니다.
@@ -93,9 +105,7 @@
             </p>
           </div>
 
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center"
-          >
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div
               class="flex flex-col items-center text-center max-w-[340px] mx-auto"
             >
@@ -103,14 +113,16 @@
                 class="border-2 border-blue-50 bg-blue-100 rounded-full text-blue-600 w-12 h-12 flex items-center justify-center mb-4"
               >
                 <i class="bi bi-compass-fill text-2xl"></i>
-                <!-- Changed to compass for day tours -->
               </div>
-              <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              <h2
+                id="tour-title-1"
+                class="text-xl font-semibold text-gray-800 mb-2"
+              >
                 당일 코스투어
               </h2>
-              <p class="text-gray-500 text-sm">
+              <p id="tour-desc-1" class="text-gray-500 text-sm">
                 엘에이 근교(죠시야 트리, 온천,샌디애고등) 맞춤투어<br />
-                인원: 최대 6명/10시간/150-200불/1인당
+                인원: 최대 6명/10시간/1인당
               </p>
             </div>
 
@@ -121,12 +133,14 @@
                 class="border-2 border-blue-50 bg-blue-100 rounded-full text-blue-600 w-12 h-12 flex items-center justify-center mb-4"
               >
                 <i class="bi bi-airplane-fill text-2xl"></i>
-                <!-- Changed to airplane for airport services -->
               </div>
-              <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              <h2
+                id="tour-title-2"
+                class="text-xl font-semibold text-gray-800 mb-2"
+              >
                 공항 이벤트 라이드 픽업
               </h2>
-              <p class="text-gray-500 text-sm">
+              <p id="tour-desc-2" class="text-gray-500 text-sm">
                 공항 세미나 이벤트 픽업 및 라이드를<br />
                 경험있는 전문기사의 안전운행서비스<br />
                 24시간 /주7일 /100-150불
@@ -140,74 +154,17 @@
                 class="border-2 border-blue-50 bg-blue-100 rounded-full text-blue-600 w-12 h-12 flex items-center justify-center mb-4"
               >
                 <i class="bi bi-geo-fill text-2xl"></i>
-                <!-- Changed to mountain for west coast travel -->
               </div>
-              <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              <h2
+                id="tour-title-3"
+                class="text-xl font-semibold text-gray-800 mb-2"
+              >
                 낭만적 미서부여행
               </h2>
-              <p class="text-gray-500 text-sm">
+              <p id="tour-desc-3" class="text-gray-500 text-sm">
                 멋진경치,광활한 대자연을 자유분방한<br />
                 느낌으로 만끽할수 있는 낭만적미서부 여행<br />
                 기간 : 1- 3일 / 인원 : 6-10명
-              </p>
-            </div>
-
-            <div
-              class="flex flex-col items-center text-center max-w-[340px] mx-auto"
-            >
-              <div
-                class="border-2 border-blue-50 bg-blue-100 rounded-full text-blue-600 w-12 h-12 flex items-center justify-center mb-4"
-              >
-                <i class="bi bi-heart-pulse-fill text-2xl"></i>
-                <!-- Changed to heart-pulse for health/healing -->
-              </div>
-              <h2 class="text-xl font-semibold text-gray-800 mb-2">
-                건강디톡스 / 힐링캠프
-              </h2>
-              <p class="text-gray-500 text-sm text-center">
-                지친일상에서 벗어나 아름다운 자연을 보며 지인들과 함께 떠나는
-                건강티톡스여행 / 힐링캠프<br />
-                기간: 2박3일 인원: 6-10명
-              </p>
-            </div>
-
-            <div
-              class="flex flex-col items-center text-center max-w-[340px] mx-auto"
-            >
-              <div
-                class="border-2 border-blue-50 bg-blue-100 rounded-full text-blue-600 w-12 h-12 flex items-center justify-center mb-4"
-              >
-                <i class="bi bi-mortarboard-fill text-2xl"></i>
-                <!-- Changed to mortarboard for youth leadership -->
-              </div>
-              <h2 class="text-xl font-semibold text-gray-800 mb-2">
-                YOUTH리더쉽 캠프
-              </h2>
-              <p class="text-gray-500 text-sm text-center">
-                청소년 및 대학생들의 비전트립 미국유명도시를 방문하며,Physical,
-                Emotional, Spiritual 균형있는 강의와 함께 팀워크를 통해
-                비전,재능,열정을 배우는 리더쉽훈련<br />
-                기간: 최대 3주 인원: 최대 20명
-              </p>
-            </div>
-
-            <div
-              class="flex flex-col items-center text-center max-w-[340px] mx-auto"
-            >
-              <div
-                class="border-2 border-blue-50 bg-blue-100 rounded-full text-blue-600 w-12 h-12 flex items-center justify-center mb-4"
-              >
-                <i class="bi bi-map-fill text-2xl"></i>
-                <!-- Changed to map for cross-country travel -->
-              </div>
-              <h2 class="text-xl font-semibold text-gray-800 mb-2">
-                미국횡단여행
-              </h2>
-              <p class="text-gray-500 text-sm text-center">
-                인생의 여행버킷리스트의 하나인 미국횡단여행 미국에서 가장가고
-                싶은도시들을 방문하며 더불어 장거리의 편안한 차량으로 잊지못할
-                추억의 여행<br />
-                기간: 최대 3주 인원6-10명
               </p>
             </div>
           </div>
@@ -215,10 +172,10 @@
       </div>
     </section>
 
-    <footer class="bg-gray-50 border-t-2">
-      <div class="mx-auto max-w-screen-xl px-6 py-10">
+    <footer>
+      <div class="mx-auto max-w-screen-xl px-6 py-36">
         <div
-          class="flex flex-col md:flex-row gap-10 items-center justify-between"
+          class="flex flex-col md:flex-row gap-4 items-center justify-between"
         >
           <!-- Footer Logo -->
           <a href="/" class="font-bold text-xl">
@@ -227,46 +184,78 @@
             </span>
             VanPooler
           </a>
-
-          <!-- Footer Links -->
-          <nav>
-            <ul class="flex gap-4">
-              <li>
-                <a
-                  href="mailto:vanpooler153@gmail.com"
-                  class="hover:text-blue-500"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </nav>
         </div>
 
         <!-- Footer Info -->
         <div
-          class="flex flex-col md:flex-row md:justify-between gap-6 pt-12 text-sm text-gray-500"
+          class="flex flex-col md:flex-row md:justify-between gap-3 pt-4 text-xs text-gray-500"
         >
-          <p>
+          <p class="text-center md:text-left">
             <strong>Tour Guide Business License:</strong> BL-036273 City of
             Buena Park<br />
             Operated as owner's vehicle until business final setup is complete
           </p>
-          <p>
+          <p class="text-center md:text-right">
             <strong>Contact Information:</strong><br />
-            Phone: (626)-773-0033<br />
-            Email: vanpooler153@gmail.com<br />
-            Address: 6905 Oslo Cir B3 Buena Park CA 90621<br />
-            Kakaotalk ID: vanpooler
+            Phone: (626)-773-0033 | Email: vanpooler153@gmail.com<br />
+            Address: 6905 Oslo Cir B3 Buena Park CA 90621 | Kakaotalk ID:
+            vanpooler
           </p>
         </div>
 
         <!-- Footer Copyright -->
-        <div class="text-center pt-6">
-          <p class="text-sm text-gray-500">
+        <div class="text-center pt-2">
+          <p class="text-xs text-gray-500">
             vanpooler©copyright 2024. All rights reserved.
           </p>
         </div>
       </div>
     </footer>
+    <script>
+      const translations = {
+        ko: {
+          title: "VanPooler 밴불러",
+          "contact-link": "문의",
+          "section-title": "맞춤투어관광, 픽업라이드 서비스",
+          "section-desc":
+            "바쁜 현대인들에게는 삶에 지친 자신을 위로하고 스스로 되돌아보기 위한 여유가 필요합니다.",
+          "tour-title-1": "당일 코스투어",
+          "tour-desc-1": "엘에이 근교 맞춤투어. 인원: 최대 6명/10시간/1인당",
+          "tour-title-2": "공항 이벤트 라이드 픽업",
+          "tour-desc-2":
+            "공항 세미나 이벤트 픽업 및 라이드를 경험있는 전문기사의 안전운행서비스. 24시간 / 주7일 / 100-150불",
+          "tour-title-3": "낭만적 미서부여행",
+          "tour-desc-3":
+            "멋진 경치, 광활한 대자연을 만끽할 수 있는 낭만적 미서부 여행. 기간 : 1-3일 / 인원 : 6-10명",
+        },
+        en: {
+          title: "VanPooler",
+          "contact-link": "Contact",
+          "section-title": "Customized Tour and Pickup Ride Service",
+          "section-desc":
+            "Modern individuals need time to reflect and comfort themselves from a busy life.",
+          "tour-title-1": "One-Day Course Tour",
+          "tour-desc-1": "Customized tours around LA. Max 6 people / 10 hours",
+          "tour-title-2": "Airport Event Ride Pickup",
+          "tour-desc-2":
+            "Airport, seminar, and event pickup with professional and safe drivers. 24/7 / $100-$150",
+          "tour-title-3": "Romantic Western US Trip",
+          "tour-desc-3":
+            "Enjoy breathtaking views and vast nature on a romantic Western US trip. Duration: 1-3 days / Group size: 6-10",
+        },
+      };
+
+      let currentLang = "ko";
+
+      document.getElementById("translate-btn").addEventListener("click", () => {
+        const newLang = currentLang === "ko" ? "en" : "ko";
+        currentLang = newLang;
+
+        Object.keys(translations[newLang]).forEach((id) => {
+          const element = document.getElementById(id);
+          if (element) element.textContent = translations[newLang][id];
+        });
+      });
+    </script>
   </body>
 </html>
